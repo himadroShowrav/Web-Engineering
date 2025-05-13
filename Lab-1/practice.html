@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="mycss.css">
+    <style>
+        h2{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:red;">This is First WE Lab</h1>
+    <h2>We Will learn Basic HTML, CSS, JS</h2>
+    <h2>We Will learn Basic HTML, CSS, JS</h2>
+
+    <p> this is for pragraph 1</p>
+    <p id="para2"> this is for pragraph 2</p>
+
+    <p id="para3"></p>
+
+    <p id="para4"> this is Para4</p>
+    <button type="button" onclick="paraChange()">Click to Change Para4</button>
+
+    <br></br>
+
+    <label for="name">Name</label>
+    <input type="text" id="name">
+    <br>
+    <br>
+    
+    <label for="id">ID</label>
+    <input type="text" id="sid">
+    <br>
+    <button type="button" onclick="myinfo()">MyInfo</button>
+    <p id="para5"></p>
+
+    
+</body>
+</html>
+<script>
+    document.getElementById("para3").innerHTML ="this is para 3";
+
+    function paraChange(){
+    document.getElementById("para4").innerHTML="Para4 Changed ";
+    }
+
+    console.log("this is cponsole");
+
+    function myinfo(){
+        var name = document.getElementById("name").value;
+        var id = document.getElementById("sid").value;
+
+        var allinfo = "Name: "+ name +" ID: "+ id;
+
+        document.getElementById("para5").innerHTML=allinfo;
+    }
+</script>
