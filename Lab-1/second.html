@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is Second Page</h1>
+    <p id="para"></p>
+</body>
+</html>
+
+<script>
+
+const urlPara = new URLSearchParams(window.location.search);
+const name = urlPara.get("name");
+const sid = urlPara.get("sid");
+
+
+document.getElementById("para").innerHTML = "Name: " + name + " | ID: " + sid;
+</script>
